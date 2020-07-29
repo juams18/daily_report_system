@@ -54,7 +54,7 @@ public class LoginFilter implements Filter {
                 //ログアウトしている状態であれば
                 //ログイン画面にリダイレクト
                 if(e == null){
-                    ((HttpServletResponse)response).sendRedirect(context_path + "/");
+                    ((HttpServletResponse)response).sendRedirect(context_path + "/login");
                     return;
                 }
 
